@@ -1,4 +1,6 @@
 function lesson3(A, K) {
+  if (!A.length) return A
+
   for (let index = 0; index < K; index++) {
     const lastElement = A[A.length - 1]
     A = A.slice(0, A.length - 1)
@@ -8,4 +10,4 @@ function lesson3(A, K) {
   return A
 }
 
-lesson3([3, 8, 9, 7, 6], 3)
+lesson3([], 1)
